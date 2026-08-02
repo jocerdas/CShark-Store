@@ -31,8 +31,8 @@
             lblTituloLogin = new Label();
             lblUsuario = new Label();
             lblContraseña = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsuario = new TextBox();
+            txtContrasena = new TextBox();
             btnIniciarSesion = new Button();
             btnRegistrarse = new Button();
             btnSalir = new Button();
@@ -68,22 +68,22 @@
             lblContraseña.TabIndex = 2;
             lblContraseña.Text = "Contraseña";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            textBox1.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(33, 93);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(282, 30);
-            textBox1.TabIndex = 3;
+            txtUsuario.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsuario.Location = new Point(33, 93);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(282, 30);
+            txtUsuario.TabIndex = 3;
             // 
-            // textBox2
+            // txtContrasena
             // 
-            textBox2.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(33, 194);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(282, 30);
-            textBox2.TabIndex = 4;
+            txtContrasena.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtContrasena.Location = new Point(33, 194);
+            txtContrasena.Name = "txtContrasena";
+            txtContrasena.PasswordChar = '*';
+            txtContrasena.Size = new Size(282, 30);
+            txtContrasena.TabIndex = 4;
             // 
             // btnIniciarSesion
             // 
@@ -94,6 +94,7 @@
             btnIniciarSesion.TabIndex = 5;
             btnIniciarSesion.Text = "&Iniciar Sesion";
             btnIniciarSesion.UseVisualStyleBackColor = true;
+            btnIniciarSesion.Click += btnIniciarSesion_Click;
             // 
             // btnRegistrarse
             // 
@@ -124,14 +125,15 @@
             Controls.Add(btnSalir);
             Controls.Add(btnRegistrarse);
             Controls.Add(btnIniciarSesion);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtContrasena);
+            Controls.Add(txtUsuario);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
             Controls.Add(lblTituloLogin);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -141,8 +143,8 @@
         private Label lblTituloLogin;
         private Label lblUsuario;
         private Label lblContraseña;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsuario;
+        private TextBox txtContrasena;
         private Button btnIniciarSesion;
         private Button btnRegistrarse;
         private Button btnSalir;

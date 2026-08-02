@@ -35,6 +35,7 @@
             textBox2 = new TextBox();
             btnIniciarSesion = new Button();
             btnRegistrarse = new Button();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // lblTituloLogin
@@ -104,11 +105,23 @@
             btnRegistrarse.Text = "&Registrarse";
             btnRegistrarse.UseVisualStyleBackColor = true;
             // 
+            // btnSalir
+            // 
+            btnSalir.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSalir.Location = new Point(272, 9);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(87, 35);
+            btnSalir.TabIndex = 7;
+            btnSalir.Text = "&Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(371, 318);
+            ControlBox = false;
+            Controls.Add(btnSalir);
             Controls.Add(btnRegistrarse);
             Controls.Add(btnIniciarSesion);
             Controls.Add(textBox2);
@@ -116,6 +129,7 @@
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
             Controls.Add(lblTituloLogin);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Login";
             Text = "Login";
             ResumeLayout(false);
@@ -131,5 +145,6 @@
         private TextBox textBox2;
         private Button btnIniciarSesion;
         private Button btnRegistrarse;
+        private Button btnSalir;
     }
 }

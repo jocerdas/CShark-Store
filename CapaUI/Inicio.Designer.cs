@@ -112,6 +112,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(361, 440);
+            ControlBox = false;
             Controls.Add(btnSalir);
             Controls.Add(btnCerrarSesion);
             Controls.Add(btnRInventario);
@@ -119,6 +120,7 @@
             Controls.Add(btnRMantUsuarios);
             Controls.Add(lblMenu);
             Controls.Add(btnRTienda);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Inicio";
             Text = "Inicio";
             ResumeLayout(false);

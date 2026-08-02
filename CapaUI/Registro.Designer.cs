@@ -169,6 +169,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(653, 221);
+            ControlBox = false;
             Controls.Add(btnVolver);
             Controls.Add(btnRegistrarse);
             Controls.Add(txtContrasena);
@@ -182,6 +183,7 @@
             Controls.Add(lblNombre);
             Controls.Add(lblCedula);
             Controls.Add(lblTitulo);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Registro";
             Text = "Registro";
             ResumeLayout(false);

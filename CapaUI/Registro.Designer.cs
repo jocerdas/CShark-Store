@@ -57,7 +57,7 @@
             // 
             lblCedula.AutoSize = true;
             lblCedula.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCedula.Location = new Point(12, 49);
+            lblCedula.Location = new Point(12, 66);
             lblCedula.Name = "lblCedula";
             lblCedula.Size = new Size(70, 22);
             lblCedula.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(180, 49);
+            lblNombre.Location = new Point(180, 66);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(70, 22);
             lblNombre.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             lblApellidos.AutoSize = true;
             lblApellidos.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblApellidos.Location = new Point(429, 49);
+            lblApellidos.Location = new Point(424, 66);
             lblApellidos.Name = "lblApellidos";
             lblApellidos.Size = new Size(100, 22);
             lblApellidos.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(12, 127);
+            lblUsuario.Location = new Point(12, 133);
             lblUsuario.Name = "lblUsuario";
             lblUsuario.Size = new Size(80, 22);
             lblUsuario.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             lblContrasena.AutoSize = true;
             lblContrasena.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblContrasena.Location = new Point(180, 127);
+            lblContrasena.Location = new Point(180, 133);
             lblContrasena.Name = "lblContrasena";
             lblContrasena.Size = new Size(110, 22);
             lblContrasena.TabIndex = 5;
@@ -106,7 +106,7 @@
             // mskCedula
             // 
             mskCedula.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            mskCedula.Location = new Point(12, 74);
+            mskCedula.Location = new Point(12, 91);
             mskCedula.Mask = "0-0000-0000";
             mskCedula.Name = "mskCedula";
             mskCedula.Size = new Size(126, 30);
@@ -115,7 +115,7 @@
             // txtNombre
             // 
             txtNombre.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNombre.Location = new Point(180, 74);
+            txtNombre.Location = new Point(180, 91);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(214, 30);
             txtNombre.TabIndex = 7;
@@ -123,7 +123,7 @@
             // txtApellidos
             // 
             txtApellidos.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtApellidos.Location = new Point(429, 74);
+            txtApellidos.Location = new Point(424, 91);
             txtApellidos.Name = "txtApellidos";
             txtApellidos.Size = new Size(214, 30);
             txtApellidos.TabIndex = 8;
@@ -147,7 +147,7 @@
             // btnRegistrarse
             // 
             btnRegistrarse.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRegistrarse.Location = new Point(453, 117);
+            btnRegistrarse.Location = new Point(460, 158);
             btnRegistrarse.Name = "btnRegistrarse";
             btnRegistrarse.Size = new Size(150, 42);
             btnRegistrarse.TabIndex = 11;
@@ -157,7 +157,7 @@
             // btnVolver
             // 
             btnVolver.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnVolver.Location = new Point(437, 167);
+            btnVolver.Location = new Point(460, 9);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(183, 42);
             btnVolver.TabIndex = 12;

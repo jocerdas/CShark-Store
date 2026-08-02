@@ -37,7 +37,7 @@ namespace CapaUI
                 Global.UsuarioActual = resultado.usuario;
                 Global.RolActual = resultado.rol;
 
-                MessageBox.Show(resultado.mensaje, "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(resultado.mensaje, "Inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 Inicio frmInicio = new Inicio();
                 frmInicio.Show();

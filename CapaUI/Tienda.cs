@@ -14,5 +14,12 @@ namespace CapaUI
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            Inicio frmInicio = new Inicio();
+            frmInicio.Show();
+            this.Hide();
+        }
     }
 }

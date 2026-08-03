@@ -38,9 +38,9 @@
             lblTotal = new Label();
             dataGridView1 = new DataGridView();
             gbxMetodoPago = new GroupBox();
-            rbEfectivo = new RadioButton();
-            rbTarjeta = new RadioButton();
             rbTransferencia = new RadioButton();
+            rbTarjeta = new RadioButton();
+            rbEfectivo = new RadioButton();
             txtCodigo = new TextBox();
             txtCantidad = new TextBox();
             txtPrecioUnitario = new TextBox();
@@ -154,16 +154,16 @@
             gbxMetodoPago.TabStop = false;
             gbxMetodoPago.Text = "Métodos de Pago";
             // 
-            // rbEfectivo
+            // rbTransferencia
             // 
-            rbEfectivo.AutoSize = true;
-            rbEfectivo.Location = new Point(3, 26);
-            rbEfectivo.Name = "rbEfectivo";
-            rbEfectivo.Size = new Size(108, 26);
-            rbEfectivo.TabIndex = 0;
-            rbEfectivo.TabStop = true;
-            rbEfectivo.Text = "Efectivo";
-            rbEfectivo.UseVisualStyleBackColor = true;
+            rbTransferencia.AutoSize = true;
+            rbTransferencia.Location = new Point(6, 90);
+            rbTransferencia.Name = "rbTransferencia";
+            rbTransferencia.Size = new Size(158, 26);
+            rbTransferencia.TabIndex = 2;
+            rbTransferencia.TabStop = true;
+            rbTransferencia.Text = "Transferencia";
+            rbTransferencia.UseVisualStyleBackColor = true;
             // 
             // rbTarjeta
             // 
@@ -176,16 +176,16 @@
             rbTarjeta.Text = "Tarjeta";
             rbTarjeta.UseVisualStyleBackColor = true;
             // 
-            // rbTransferencia
+            // rbEfectivo
             // 
-            rbTransferencia.AutoSize = true;
-            rbTransferencia.Location = new Point(6, 90);
-            rbTransferencia.Name = "rbTransferencia";
-            rbTransferencia.Size = new Size(158, 26);
-            rbTransferencia.TabIndex = 2;
-            rbTransferencia.TabStop = true;
-            rbTransferencia.Text = "Transferencia";
-            rbTransferencia.UseVisualStyleBackColor = true;
+            rbEfectivo.AutoSize = true;
+            rbEfectivo.Location = new Point(3, 26);
+            rbEfectivo.Name = "rbEfectivo";
+            rbEfectivo.Size = new Size(108, 26);
+            rbEfectivo.TabIndex = 0;
+            rbEfectivo.TabStop = true;
+            rbEfectivo.Text = "Efectivo";
+            rbEfectivo.UseVisualStyleBackColor = true;
             // 
             // txtCodigo
             // 
@@ -266,6 +266,7 @@
             btnVolver.TabIndex = 18;
             btnVolver.Text = "&Volver";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // Tienda
             // 

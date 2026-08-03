@@ -35,6 +35,7 @@
             btnRInventario = new Button();
             btnCerrarSesion = new Button();
             btnSalir = new Button();
+            lblUsuarioActivo = new Label();
             SuspendLayout();
             // 
             // btnRTienda
@@ -46,12 +47,13 @@
             btnRTienda.TabIndex = 0;
             btnRTienda.Text = "&Tienda";
             btnRTienda.UseVisualStyleBackColor = true;
+            btnRTienda.Click += btnRTienda_Click;
             // 
             // lblMenu
             // 
             lblMenu.AutoSize = true;
             lblMenu.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblMenu.Location = new Point(109, 20);
+            lblMenu.Location = new Point(109, 14);
             lblMenu.Name = "lblMenu";
             lblMenu.Size = new Size(150, 22);
             lblMenu.TabIndex = 1;
@@ -66,6 +68,7 @@
             btnRMantUsuarios.TabIndex = 2;
             btnRMantUsuarios.Text = "&Mantenimiento Usuarios";
             btnRMantUsuarios.UseVisualStyleBackColor = true;
+            btnRMantUsuarios.Click += btnRMantUsuarios_Click;
             // 
             // btnRMantArticulos
             // 
@@ -76,6 +79,7 @@
             btnRMantArticulos.TabIndex = 3;
             btnRMantArticulos.Text = "Mantenimiento &Artículos";
             btnRMantArticulos.UseVisualStyleBackColor = true;
+            btnRMantArticulos.Click += btnRMantArticulos_Click;
             // 
             // btnRInventario
             // 
@@ -96,6 +100,7 @@
             btnCerrarSesion.TabIndex = 5;
             btnCerrarSesion.Text = "&Cerrar Sesion";
             btnCerrarSesion.UseVisualStyleBackColor = true;
+            btnCerrarSesion.Click += btnCerrarSesion_Click;
             // 
             // btnSalir
             // 
@@ -106,6 +111,17 @@
             btnSalir.TabIndex = 6;
             btnSalir.Text = "&Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // lblUsuarioActivo
+            // 
+            lblUsuarioActivo.AutoSize = true;
+            lblUsuarioActivo.Font = new Font("Consolas", 11.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblUsuarioActivo.Location = new Point(4, 38);
+            lblUsuarioActivo.Name = "lblUsuarioActivo";
+            lblUsuarioActivo.Size = new Size(72, 18);
+            lblUsuarioActivo.TabIndex = 7;
+            lblUsuarioActivo.Text = "Usuario:";
             // 
             // Inicio
             // 
@@ -113,6 +129,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(361, 440);
             ControlBox = false;
+            Controls.Add(lblUsuarioActivo);
             Controls.Add(btnSalir);
             Controls.Add(btnCerrarSesion);
             Controls.Add(btnRInventario);
@@ -123,6 +140,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Inicio";
             Text = "Inicio";
+            Load += Inicio_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,5 +154,6 @@
         private Button btnRInventario;
         private Button btnCerrarSesion;
         private Button btnSalir;
+        private Label lblUsuarioActivo;
     }
 }

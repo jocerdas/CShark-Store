@@ -153,6 +153,7 @@
             btnRegistrarse.TabIndex = 11;
             btnRegistrarse.Text = "&Registrarse";
             btnRegistrarse.UseVisualStyleBackColor = true;
+            btnRegistrarse.Click += btnRegistrarse_Click;
             // 
             // btnVolver
             // 
@@ -163,6 +164,7 @@
             btnVolver.TabIndex = 12;
             btnVolver.Text = "&Volver al Login";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // Registro
             // 

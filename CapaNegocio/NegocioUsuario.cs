@@ -29,5 +29,17 @@ namespace CapaNegocio
             // Si todo está correcto
             return (true, $"Bienvenido {nombreUsuario}. Rol: {rol}", rol, nombreUsuario);
         }
+
+        public string RegistrarNuevoUsuario(string cedula, string nombre, string apellidos, string usuario, string contrasena)
+        {
+            if (dataUsuarios.UsuarioExiste(usuario))
+                return "El usuario ya existe. Por favor, ingrese un nombre de usuario diferente.";
+
+            bool registrado = dataUsuarios.RegistrarUsuario(cedula, nombre, apellidos, usuario, contrasena);
+
+            return registrado
+                ? "Usuario registrado correctamente."
+                : "No se pudo registrar el usuario. Intente nuevamente.";
+        }
     }
 }

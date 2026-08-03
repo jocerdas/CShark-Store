@@ -52,6 +52,8 @@
             btnNuevos = new Button();
             btnGuardar = new Button();
             btnVolver = new Button();
+            btnSeleccionar = new Button();
+            btnModificar = new Button();
             gbxRol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
@@ -184,7 +186,7 @@
             // 
             lblConteo.AutoSize = true;
             lblConteo.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblConteo.Location = new Point(188, 458);
+            lblConteo.Location = new Point(177, 458);
             lblConteo.Name = "lblConteo";
             lblConteo.Size = new Size(20, 22);
             lblConteo.TabIndex = 10;
@@ -257,7 +259,7 @@
             chkNuevo.AutoSize = true;
             chkNuevo.Enabled = false;
             chkNuevo.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkNuevo.Location = new Point(375, 174);
+            chkNuevo.Location = new Point(375, 165);
             chkNuevo.Name = "chkNuevo";
             chkNuevo.Size = new Size(79, 26);
             chkNuevo.TabIndex = 18;
@@ -267,22 +269,24 @@
             // btnNuevos
             // 
             btnNuevos.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnNuevos.Location = new Point(231, 454);
+            btnNuevos.Location = new Point(203, 443);
             btnNuevos.Name = "btnNuevos";
-            btnNuevos.Size = new Size(264, 30);
+            btnNuevos.Size = new Size(171, 52);
             btnNuevos.TabIndex = 19;
-            btnNuevos.Text = "&Mostrar Usuarios Nuevos";
+            btnNuevos.Text = "Mostrar &Usuarios Nuevos";
             btnNuevos.UseVisualStyleBackColor = true;
+            btnNuevos.Click += btnNuevos_Click;
             // 
             // btnGuardar
             // 
             btnGuardar.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnGuardar.Location = new Point(596, 454);
+            btnGuardar.Location = new Point(673, 454);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(156, 30);
+            btnGuardar.Size = new Size(115, 30);
             btnGuardar.TabIndex = 20;
             btnGuardar.Text = "&Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnVolver
             // 
@@ -293,6 +297,29 @@
             btnVolver.TabIndex = 21;
             btnVolver.Text = "&Volver";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
+            // 
+            // btnSeleccionar
+            // 
+            btnSeleccionar.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSeleccionar.Location = new Point(380, 454);
+            btnSeleccionar.Name = "btnSeleccionar";
+            btnSeleccionar.Size = new Size(142, 30);
+            btnSeleccionar.TabIndex = 22;
+            btnSeleccionar.Text = "&Seleccionar";
+            btnSeleccionar.UseVisualStyleBackColor = true;
+            btnSeleccionar.Click += btnSeleccionar_Click;
+            // 
+            // btnModificar
+            // 
+            btnModificar.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnModificar.Location = new Point(532, 454);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(131, 30);
+            btnModificar.TabIndex = 23;
+            btnModificar.Text = "&Modificar";
+            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
             // 
             // MantenimientoUsuarios
             // 
@@ -300,6 +327,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
             ControlBox = false;
+            Controls.Add(btnModificar);
+            Controls.Add(btnSeleccionar);
             Controls.Add(btnVolver);
             Controls.Add(btnGuardar);
             Controls.Add(btnNuevos);
@@ -324,6 +353,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "MantenimientoUsuarios";
             Text = "Mantenimiento De Usuarios";
+            Load += MantenimientoUsuarios_Load;
             gbxRol.ResumeLayout(false);
             gbxRol.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
@@ -357,5 +387,7 @@
         private Button btnNuevos;
         private Button btnGuardar;
         private Button btnVolver;
+        private Button btnSeleccionar;
+        private Button btnModificar;
     }
 }

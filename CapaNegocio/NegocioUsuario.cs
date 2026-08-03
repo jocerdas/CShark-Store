@@ -1,7 +1,8 @@
-﻿using System;
+﻿using CapaDatos;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
-using CapaDatos;
 
 namespace CapaNegocio
 {
@@ -38,6 +39,29 @@ namespace CapaNegocio
             bool registrado = dataUsuarios.RegistrarUsuario(cedula, nombre, apellidos, usuario, contrasena);
 
             return registrado
+                ? "Usuario registrado correctamente."
+                : "No se pudo registrar el usuario. Intente nuevamente.";
+        }
+        public int ObtenerConteoUsuariosNuevos() => dataUsuarios.ContarUsuariosNuevos();
+
+        public DataTable ObtenerUsuarioNuevo() => dataUsuarios.ObtenerUsuarioNuevo();
+
+        public DataTable ObtenerTodosUsuarios() => dataUsuarios.ListarUsuarios();
+
+        public bool ModificarUsuario(int idUsuario, string cedula, string nombre, string apellidos, string usuario, string contrasena, int idRol, int idEstado)
+        {
+            return dataUsuarios.ModificarUsuario(idUsuario, cedula, nombre, apellidos, usuario, contrasena, idRol, idEstado);
+        }
+
+        public string GuardarUsuario(string cedula, string nombre, string apellidos, string usuario, string contrasena, int idRol, int idEstado)
+        {
+            // Validar si ya existe
+            if (dataUsuarios.UsuarioExiste(usuario))
+                return "El usuario ya existe. Por favor, ingrese un nombre de usuario diferente.";
+
+            bool guardado = dataUsuarios.GuardarUsuario(cedula, nombre, apellidos, usuario, contrasena, idRol, idEstado);
+
+            return guardado
                 ? "Usuario registrado correctamente."
                 : "No se pudo registrar el usuario. Intente nuevamente.";
         }

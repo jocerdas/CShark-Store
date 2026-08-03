@@ -105,6 +105,7 @@
             btnRegistrarse.TabIndex = 6;
             btnRegistrarse.Text = "&Registrarse";
             btnRegistrarse.UseVisualStyleBackColor = true;
+            btnRegistrarse.Click += btnRegistrarse_Click;
             // 
             // btnSalir
             // 
@@ -115,6 +116,7 @@
             btnSalir.TabIndex = 7;
             btnSalir.Text = "&Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // Login
             // 

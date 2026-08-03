@@ -48,5 +48,17 @@ namespace CapaUI
                 MessageBox.Show("Error al iniciar sesión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            Registro frmRegistro = new Registro();
+            frmRegistro.Show();
+            this.Hide();
+        }
     }
 }

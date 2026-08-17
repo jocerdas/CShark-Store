@@ -19,7 +19,6 @@ namespace CapaDatos
 
                 using (SqlCommand comando = new SqlCommand(consulta, conexion))
                 {
-                    comando.Parameters.AddWithValue("@IdArticulo", articulo.IdArticulo);
                     comando.Parameters.AddWithValue("@Codigo", articulo.Codigo);
                     comando.Parameters.AddWithValue("@Nombre", articulo.Nombre);
                     comando.Parameters.AddWithValue("@Precio", articulo.Precio);

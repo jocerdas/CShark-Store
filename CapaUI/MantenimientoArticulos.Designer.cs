@@ -114,6 +114,7 @@
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(133, 30);
             txtCodigo.TabIndex = 6;
+            txtCodigo.TextChanged += txtCodigo_TextChanged;
             // 
             // txtNombre
             // 

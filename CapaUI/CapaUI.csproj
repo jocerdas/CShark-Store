@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj" />
+    <ProjectReference Include="..\Entidades\CapaEntidades.csproj" />
   </ItemGroup>
 
   <ItemGroup>

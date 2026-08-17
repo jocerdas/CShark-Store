@@ -2,4 +2,5 @@
   <Project Path="CapaDatos/CapaDatos.csproj" />
   <Project Path="CapaNegocio/CapaNegocio.csproj" />
   <Project Path="CapaUI/CapaUI.csproj" />
+  <Project Path="Entidades/CapaEntidades.csproj" Id="e24a81f2-7914-4b5e-8424-059f7c6d4431" />
 </Solution>

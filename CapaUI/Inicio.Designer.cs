@@ -32,7 +32,6 @@
             lblMenu = new Label();
             btnRMantUsuarios = new Button();
             btnRMantArticulos = new Button();
-            btnRInventario = new Button();
             btnCerrarSesion = new Button();
             btnSalir = new Button();
             lblUsuarioActivo = new Label();
@@ -81,20 +80,10 @@
             btnRMantArticulos.UseVisualStyleBackColor = true;
             btnRMantArticulos.Click += btnRMantArticulos_Click;
             // 
-            // btnRInventario
-            // 
-            btnRInventario.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRInventario.Location = new Point(39, 250);
-            btnRInventario.Name = "btnRInventario";
-            btnRInventario.Size = new Size(282, 42);
-            btnRInventario.TabIndex = 4;
-            btnRInventario.Text = "&Inventario";
-            btnRInventario.UseVisualStyleBackColor = true;
-            // 
             // btnCerrarSesion
             // 
             btnCerrarSesion.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCerrarSesion.Location = new Point(39, 317);
+            btnCerrarSesion.Location = new Point(39, 245);
             btnCerrarSesion.Name = "btnCerrarSesion";
             btnCerrarSesion.Size = new Size(282, 42);
             btnCerrarSesion.TabIndex = 5;
@@ -105,7 +94,7 @@
             // btnSalir
             // 
             btnSalir.Font = new Font("Consolas", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSalir.Location = new Point(39, 382);
+            btnSalir.Location = new Point(39, 310);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(282, 42);
             btnSalir.TabIndex = 6;
@@ -127,12 +116,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(361, 440);
+            ClientSize = new Size(361, 365);
             ControlBox = false;
             Controls.Add(lblUsuarioActivo);
             Controls.Add(btnSalir);
             Controls.Add(btnCerrarSesion);
-            Controls.Add(btnRInventario);
             Controls.Add(btnRMantArticulos);
             Controls.Add(btnRMantUsuarios);
             Controls.Add(lblMenu);
@@ -151,7 +139,6 @@
         private Label lblMenu;
         private Button btnRMantUsuarios;
         private Button btnRMantArticulos;
-        private Button btnRInventario;
         private Button btnCerrarSesion;
         private Button btnSalir;
         private Label lblUsuarioActivo;

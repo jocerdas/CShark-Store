@@ -167,6 +167,7 @@
             btnSeleccionar.TabIndex = 12;
             btnSeleccionar.Text = "&Seleccionar";
             btnSeleccionar.UseVisualStyleBackColor = true;
+            btnSeleccionar.Click += btnSeleccionar_Click_1;
             // 
             // btnCrear
             // 
@@ -177,6 +178,7 @@
             btnCrear.TabIndex = 13;
             btnCrear.Text = "&Crear";
             btnCrear.UseVisualStyleBackColor = true;
+            btnCrear.Click += btnCrear_Click_1;
             // 
             // btnModificar
             // 
@@ -187,6 +189,7 @@
             btnModificar.TabIndex = 14;
             btnModificar.Text = "&Modificar";
             btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click_1;
             // 
             // btnVolver
             // 

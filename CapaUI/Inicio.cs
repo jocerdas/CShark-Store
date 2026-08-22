@@ -18,9 +18,6 @@ namespace CapaUI
 
         private void ConfigurarMenuPorRol()
         {
-            // Bloquear Inventario para todos
-            btnRInventario.Enabled = false;
-
             switch (Global.RolActual)
             {
                 case "Administrador":

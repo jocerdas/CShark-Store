@@ -1,4 +1,5 @@
 ﻿using CapaDatos;
+using CapaModelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,6 +10,7 @@ namespace CapaNegocio
     public class NegocioUsuario
     {
         private DataUsuarios dataUsuarios = new DataUsuarios();
+        private ModeloUsuario modeloUsuario = new ModeloUsuario();
 
         public (bool valido, string mensaje, string rol, string usuario) ValidarUsuario(string usuario, string contrasena)
         {

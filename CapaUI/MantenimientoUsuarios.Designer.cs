@@ -253,6 +253,7 @@
             chkActivo.TabIndex = 17;
             chkActivo.Text = "Activo";
             chkActivo.UseVisualStyleBackColor = true;
+            chkActivo.CheckedChanged += chkActivo_CheckedChanged;
             // 
             // chkNuevo
             // 

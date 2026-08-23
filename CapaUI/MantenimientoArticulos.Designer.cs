@@ -114,7 +114,6 @@
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(133, 30);
             txtCodigo.TabIndex = 6;
-            txtCodigo.TextChanged += txtCodigo_TextChanged;
             // 
             // txtNombre
             // 
@@ -168,6 +167,7 @@
             btnSeleccionar.TabIndex = 12;
             btnSeleccionar.Text = "&Seleccionar";
             btnSeleccionar.UseVisualStyleBackColor = true;
+            btnSeleccionar.Click += btnSeleccionar_Click;
             // 
             // btnCrear
             // 
@@ -178,6 +178,7 @@
             btnCrear.TabIndex = 13;
             btnCrear.Text = "&Crear";
             btnCrear.UseVisualStyleBackColor = true;
+            btnCrear.Click += btnCrear_Click;
             // 
             // btnModificar
             // 
@@ -188,6 +189,7 @@
             btnModificar.TabIndex = 14;
             btnModificar.Text = "&Modificar";
             btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
             // 
             // btnVolver
             // 
